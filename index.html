@@ -4,6 +4,20 @@
   <title>
     Profil Saya
   </title>
+  <link rel="stylesheet" href="assets/css/styleku.css">
+  <style>
+    .data-ktp {
+      color: green;
+    }
+
+    .data-ktp-nonprimary {
+      background: yellow;
+    }
+  
+    #data-ktp-primary {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -12,17 +26,17 @@
   <img src="steve.jpg" alt="Stark">
   <br/>
 
-  <em>Biodata Saya</em>
+  <em style="color: #FF0000">Biodata Saya</em>
   <hr>
 
   <p>
-    <b>Nama: </b> Firdaus
+    <b id="data-ktp-primary" class="data-ktp">Nama: </b> Firdaus
   </p>
 
-  <b>Gender: </b> ???
+  <b class="data-ktp data-ktp-nonprimary">Gender: </b> ???
   <br><br>
 
-  <b>Umur: </b> 27
+  <b class="data-ktp data-ktp-nonprimary">Umur: </b> 27
 
   <p><b>Hobi:</b></p>
   <ol>
