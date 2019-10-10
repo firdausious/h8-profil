@@ -4,92 +4,75 @@
   <title>
     Profil Saya
   </title>
-  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Mansalva', cursive;
-    }
 
-    a {
-      color: #000000;
-    }
-    .profile-photo {
-      display: inline-block;
-      border: 20px solid #a29d9d;
-    }
-
-    .profile-data {
-      border: 1px solid #a29d9d;
-      border-collapse: collapse;
-    }
-
-    .profile-data th {
-      border: 1px solid #a29d9d;
-      text-align: center;
-      font-weight: bold;
-      padding: 8px 44px;
-    }
-
-    .profile-data td {
-      padding: 10px;
-      border: 1px solid #a29d9d;
-    }
-
-    .profile-data td ul,
-    .profile-data td ol {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      left: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="profile-photo">
-    <img src="steve.jpg" alt="Stark">
+  <div class="container">
+    <div class="row py-md-5">
+      <div class="col-md-3 text-center">
+        <img src="steve.jpg" class="img-thumbnail rounded-circle" alt="Stark">
+        <h1 class="display-5">Firdausss</h1>
+      </div>
+      <div class="col-md-9">
+        <table class="table table-responsive">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Umur</th>
+              <th scope="col">Hobi</th>
+              <th scope="col">Interest</th>
+              <th scope="col">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Firdaus</td>
+              <td>???</td>
+              <td>27</td>
+              <td>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Makan</li>
+                  <li class="list-group-item">Tidur</li>
+                  <li class="list-group-item">Boker</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Musik</li>
+                  <li class="list-group-item">Game</li>
+                  <li class="list-group-item">Mesin</li>
+                </ul>
+              </td>
+
+              <td>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                  <li class="list-group-item"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                  <li class="list-group-item"><a href="https://github.com" target="_blank">Github</a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
-  <h1>Biodata</h1>
-  <hr>
-
-  <table class="profile-data">
-    <thead>
-      <th>Nama</th>
-      <th>Gender</th>
-      <th>Umur</th>
-      <th>Hobi</th>
-      <th>Interest</th>
-      <th>Link</th>
-    </thead>
-    <tr>
-      <td>Firdaus</td>
-      <td>???</td>
-      <td>27</td>
-      <td>
-        <ol>
-          <li>Makan</li>
-          <li>Tidur</li>
-          <li>Boker</li>
-        </ol>
-      </td>
-      <td>
-        <ul>
-          <li>Musik</li>
-          <li>Game</li>
-          <li>Mesin</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-          <li><a href="https://github.com" target="_blank">Github</a></li>
-        </ul>
-      </td>
-    </tr>
-  </table>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5mdXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
