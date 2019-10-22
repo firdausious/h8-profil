@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Form Jodoh</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="https://formspree.io/xaywnvzq" method="POST" class="needs-validation" novalidate>
+      <div class="form-row">
+
+        <!-- Nama ============================ -->
+        <div class="col-md-6 mb-3">
+          <label>Nama</label>
+          <input type="text" name="nama" class="form-control" required>
+          <div class="valid-feedback">
+            Cakep namanya
+          </div>
+          <div class="invalid-feedback">
+            Masukin nama dong
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- Jenis Kelamin ============================ -->
+        <div class="col-md-6 mb-3">
+          <label>Jenis Kelamin</label>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="jenis-kelamin-lakilaki" name="jenisKelamin" value="laki-laki" class="custom-control-input" required>
+            <label class="custom-control-label" for="jenis-kelamin-lakilaki">Laki-laki</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="jenis-kelamin-perempuan" name="jenisKelamin" value="perempuan" class="custom-control-input" required>
+            <label class="custom-control-label" for="jenis-kelamin-perempuan">Perempuan</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- Tanggal lahir ============================ -->
+        <div class="col-md-4 mb-3">
+          <label>Tanggal Lahir</label>
+          <input type="date" name="tanggalLahir" class="form-control" required>
+        </div>
+
+        <!-- Usia ============================ -->
+        <div class="col-md-2 mb-3">
+          <label>Usia</label>
+          <input type="number" name="usia" class="form-control" required>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- Tinggi Badan ============================ -->
+        <div class="col-md-2 mb-3">
+          <label>Tinggi Badan</label>
+          <input type="number" name="tinggiBadan" class="form-control" required>
+        </div>
+
+      </div>
+
+
+      <div class="form-row">
+
+        <!-- Telp ============================ -->
+        <div class="col-md-3 mb-3">
+          <label>Nomor Telp</label>
+          <input type="tel" name="telepon" class="form-control" required>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- Alamat ============================ -->
+        <div class="col-md-6 mb-3">
+          <label>Alamat</label>
+          <textarea name="alamat" class="form-control" required></textarea>
+        </div>
+
+      </div>
+
+
+      <div class="form-row">
+
+        <!-- Pekerjaan ============================ -->
+        <div class="col-md-6 mb-3">
+          <label>Pekerjaan</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox" name="pekerjaan" aria-label="Checkbox for following text input">
+              </div>
+            </div>
+            <label class="form-control">PNS</label>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox" name="pekerjaan" aria-label="Checkbox for following text input">
+              </div>
+            </div>
+            <label class="form-control">Swasta</label>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+              </div>
+            </div>
+            <input type="text" name="pekerjaan" class="form-control" placeholder="Lainnya" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- Bubur ayam di aduk / gak ============================ -->
+        <div class="col-md-6 mb-3">
+          <label>Bubur ayam di aduk atau enggak ?</label>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="buburayam-diaduk" name="buburAyam" value="diaduk" class="custom-control-input">
+            <label class="custom-control-label" for="buburayam-diaduk">Diaduk</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="buburayam-gakdiaduk" name="buburAyam" value="gakdiaduk" class="custom-control-input">
+            <label class="custom-control-label" for="buburayam-gakdiaduk">Gak Diaduk</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <!-- Warna Kesukaan ============================ -->
+        <div class="col-md-2 mb-3">
+          <label>Warna Kesukaan</label>
+          <input type="color" name="warna" class="form-control" required>
+        </div>
+
+      </div>
+      <input type="hidden" name="_replyto" value="firdausious@gmail.com">
+      <button class="btn btn-primary" type="submit" value="Send">Submit form</button>
+    </form>
+  </div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
